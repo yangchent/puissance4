@@ -5,9 +5,7 @@ class App extends React.Component{
   render(){
     return (
     <div>
-    <h1>3BigBoys</h1>
-    <h3>julien</h3>
-    <h4>RAhmad</h4>
+    <h1>3BigBoys</h1> 
     </div>
 
     )
