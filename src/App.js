@@ -3,7 +3,14 @@ import './App.css';
 
 class App extends React.Component{
   render(){
-    return <h1>3BigBoys</h1>
+    return (
+    <div>
+    <h1>3BigBoys</h1>
+    <h3>julien</h3>
+    </div>
+
+    )
+    
   }
 }
 
