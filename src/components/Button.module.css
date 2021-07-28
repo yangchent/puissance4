@@ -10,3 +10,9 @@
     border-radius: 25px;
     box-shadow: black 0 0 5px;
 }
+.yellow {
+    background-color: yellow;
+  }
+  .red {
+    background-color: red;
+  }
