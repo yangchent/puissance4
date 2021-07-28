@@ -37,11 +37,12 @@ class Table extends React.Component {
         for(  let i = 0; i < this.state[nbColumn].length; i++) {
             if(this.state[nbColumn][i] === 0 ) {
                 const colCopy = [...this.state[nbColumn]]
-                colCopy.splice(i, 1, "yellow")
+                this.state.player ? (colCopy.splice(i, 1, "red")) : (colCopy.splice(i, 1, "yellow"))
                 this.setState((prevState) => {
                     return {  
                         ...prevState,
-                        [nbColumn]: [...colCopy]
+                        [nbColumn]: [...colCopy],
+                        player: !this.state.player
                     }   
                 })
                 break;
