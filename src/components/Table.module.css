@@ -1,0 +1,17 @@
+.div {
+    display: flex;
+   justify-content: center;
+  }
+
+.table {
+    border-left: solid 15px rgb(6, 6, 104);
+    border-right: solid 15px rgb(6, 6, 104);
+    border-top: solid 3px rgb(6, 6, 104);
+    border-bottom: solid 5px rgb(6, 6, 104);
+    background-color: blue;
+}
+  
+.tbody {
+    background-color: blue; 
+}
+  

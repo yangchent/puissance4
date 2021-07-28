@@ -1,110 +1,112 @@
 import React from 'react'
+import table from './Table.module.css'
+import Button from './Button';
 
 
 class Table extends React.Component {
     render() {
         return (
-            <div className="div">
-                <table className="table">
-                    <tbody className="tbody">
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+            <div className={table.div} >
+                <table className={table.table} >
+                    <tbody className={table.tbody} >
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr className="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
-                        <tr classname="tr">
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
-                            <td className="td"><button classname="btn" /></td>
+                        <tr className={table.tr}>
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
+                            <Button />
                         </tr>
                     </tbody>
                 </table>
