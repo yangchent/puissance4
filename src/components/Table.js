@@ -23,11 +23,14 @@ class Table extends React.Component {
     }
 
     componentDidUpdate(){
-        this.victoryCondition()
+        this.columnVictoryCondition()
+        this.LineVictoryCondition()
+        this.leftDiagonalVictoryCondition()
+        this.rightDiagonalVictoryCondition()
     }
 
     onClickColumn = (nbColumn) => {
-        console.log(`click`)
+        // console.log(`click`)
         for(  let i = 0; i < this.state[nbColumn].length; i++) {
             if(this.state[nbColumn][i] === 0 ) {
                 const colCopy = [...this.state[nbColumn]]
@@ -44,14 +47,95 @@ class Table extends React.Component {
         }
     }
     
-    victoryCondition = () => {
+    columnVictoryCondition = () => {
         for ( let i = 1;  i <= 7; i++  ) {
             let table = this.state["col" + i];
-            console.log('table', table)
-            console.log('table', table)
             for ( let j=0; j <= table.length; j++){
-                if ( table[j] === "red" && table[j+1] ==="red" && table[j+2] === "red" && table[j+3] === "red") {
-                    alert("Player yellow won the game");
+                if (table[j] === "yellow" &&  table[j+1] ===table[j] && table[j+2] === table[j] && table[j+3] === table[j]) {
+                    setTimeout(() => {
+                        alert("Player yellow won the game");
+                    },300);
+                }
+                if (table[j] === "red" &&  table[j+1] ===table[j] && table[j+2] === table[j] && table[j+3] === table[j]) {
+                    setTimeout(() => {
+                        alert("Player red won the game");
+                    },300);
+                }
+            }
+        }
+   }
+
+
+    LineVictoryCondition = () => {
+        for ( let i = 1;  i <= 4; i++  ) {
+            for ( let j=0; j <= this.state["col" + i].length; j++){
+                if (
+                    this.state["col" + i][j] === "yellow" &&  
+                    this.state["col" + (i+1)][j] === this.state["col" + i][j] && 
+                    this.state["col" + (i+2)][j] === this.state["col" + i][j] && 
+                    this.state["col" + (i+3)][j] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player yellow won the game");
+                    },300);
+                }
+                if (
+                    this.state["col" + i][j] === "red" &&  
+                    this.state["col" + (i+1)][j] === this.state["col" + i][j] && 
+                    this.state["col" + (i+2)][j] === this.state["col" + i][j] && 
+                    this.state["col" + (i+3)][j] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player red won the game");
+                    },300);
+                }
+            }
+        }
+   }
+
+    leftDiagonalVictoryCondition = () => {
+        for ( let i = 1;  i <= 4; i++  ) {
+            for ( let j=0; j <= this.state["col" + i].length; j++){
+                if (
+                    this.state["col" + i][j] === "yellow" &&  
+                    this.state["col" + (i+1)][j+1] === this.state["col" + i][j] && 
+                    this.state["col" + (i+2)][j+2] === this.state["col" + i][j] && 
+                    this.state["col" + (i+3)][j+3] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player yellow won the game");
+                    },300);
+                }
+                if (
+                    this.state["col" + i][j] === "red" &&  
+                    this.state["col" + (i+1)][j+1] === this.state["col" + i][j] && 
+                    this.state["col" + (i+2)][j+2] === this.state["col" + i][j] && 
+                    this.state["col" + (i+3)][j+3] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player red won the game");
+                    },300);
+                }
+            }
+        }
+    }
+
+    rightDiagonalVictoryCondition = () => {
+        for ( let i = 4;  i <= 7; i++  ) {
+            for ( let j=0; j <= this.state["col" + i].length; j++){
+                if (
+                    this.state["col" + i][j] === "yellow" &&  
+                    this.state["col" + (i-1)][j+1] === this.state["col" + i][j] && 
+                    this.state["col" + (i-2)][j+2] === this.state["col" + i][j] && 
+                    this.state["col" + (i-3)][j+3] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player yellow won the game");
+                    },300);
+                }
+                if (
+                    this.state["col" + i][j] === "red" &&  
+                    this.state["col" + (i-1)][j+1] === this.state["col" + i][j] && 
+                    this.state["col" + (i-2)][j+2] === this.state["col" + i][j] && 
+                    this.state["col" + (i-3)][j+3] === this.state["col" + i][j]) {
+                    setTimeout(() => {
+                        alert("Player red won the game");
+                    },300);
                 }
             }
         }
