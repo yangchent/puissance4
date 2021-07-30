@@ -1,8 +1,10 @@
 .yellow {
-    background: radial-gradient(#fbf93f, #fc4646)
+    background: yellow
+    /* background: radial-gradient(#fbf93f, #fc4646) */
   }
 .red {
-  background: radial-gradient(black, yellow, red, red)
+  background: red
+  /* background: radial-gradient(black, yellow, red, red) */
 }
 
 .mainTitle {

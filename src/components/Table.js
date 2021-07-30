@@ -20,17 +20,10 @@ class Table extends React.Component {
     }
 
     componentDidMount () {
-        console.log(this.state.col1)
-
     }
 
-    changeClass = (e)=> {
-        this.setState((prevState)=> {
-            return{
-                ...prevState,
-                class: "yellow"
-            }
-       })
+    componentDidUpdate(){
+        this.victoryCondition()
     }
 
     onClickColumn = (nbColumn) => {
@@ -51,13 +44,23 @@ class Table extends React.Component {
         }
     }
     
-    victoryCondition = () =>{
-        
-    }
+    victoryCondition = () => {
+        for ( let i = 1;  i <= 7; i++  ) {
+            let table = this.state["col" + i];
+            console.log('table', table)
+            console.log('table', table)
+            for ( let j=0; j <= table.length; j++){
+                if ( table[j] === "red" && table[j+1] ==="red" && table[j+2] === "red" && table[j+3] === "red") {
+                    alert("Player yellow won the game");
+                }
+            }
+        }
+   }
 
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
+        
         return (
             <div className={table.divContainer} >
                 <table className={table.table} >
