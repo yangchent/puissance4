@@ -6,11 +6,11 @@ class App extends React.Component {
   render() {
     return (
         <div>
-            <h1 className="mainTitle">3bigBoys</h1>
+            <h1 className="mainTitle">3BigBoys</h1>
             <div className="div">
                 <Table />
             </div>
-            <p className="mainTitle">C'est a vous de jouer !!!!!!!!!!!!!!!</p>
+            <p className="bottomLine">C'est a vous de jouer !!!!!!!!!!!!!!!</p>
         </div>
 
     )
