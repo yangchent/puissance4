@@ -6,7 +6,9 @@
   background: red
   /* background: radial-gradient(black, yellow, red, red) */
 }
-
+.mainContent{
+  background-color: teal;
+}
 .mainTitle {
   font-size: 2.5rem;
   text-align: center;
@@ -15,4 +17,10 @@
 .bottomLine{
   text-align: center;
   text-shadow: rgb(233, 35, 0) 1px 2px 3px;
+}
+.upImgTitle{
+  background: tomato;
+  margin-left: 48%;
+  height: 50px;
+  width: 50px;
 }
