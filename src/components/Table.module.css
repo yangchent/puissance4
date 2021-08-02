@@ -21,7 +21,7 @@
 .tbody {
     width: 100%;
     height: 100%;
-    background: linear-gradient(-46deg,#6834ca,#0300ad,#552619,#494013);
+    background: linear-gradient(-46deg,#6834ca,#0200ad,#552619,#494013);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     font-family: "open sans";

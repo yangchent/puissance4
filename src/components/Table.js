@@ -3,6 +3,7 @@ import table from './Table.module.css'
 import Button from './Button';
 
 
+
 class Table extends React.Component {
     constructor() {
         super();
@@ -67,7 +68,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
                 if (table[j] === "red" &&  table[j+1] ===table[j] && table[j+2] === table[j] && table[j+3] === table[j]) {
                     setTimeout(() => {
@@ -85,7 +86,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
             }
         }
@@ -115,7 +116,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
                 if (
                     this.state["col" + i][j] === "red" &&  
@@ -137,7 +138,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
             }
         }
@@ -166,7 +167,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
                 if (
                     this.state["col" + i][j] === "red" &&  
@@ -188,7 +189,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
             }
         }
@@ -217,7 +218,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
                 if (
                     this.state["col" + i][j] === "red" &&  
@@ -239,7 +240,7 @@ class Table extends React.Component {
                                 player: true, 
                             }
                         })
-                    },300);
+                    },200);
                 }
             }
         }
@@ -250,6 +251,7 @@ class Table extends React.Component {
         // console.log(this.state)
         
         return (
+            
             <div className={table.divContainer} >
                 <table className={table.table} >
                     <tbody className={table.tbody} >

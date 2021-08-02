@@ -20,6 +20,7 @@ p{
   text-align: center;
   text-shadow: rgb(233, 35, 0) 1px 2px 3px;
   color: white;
+  padding-top: 35px;
 }
 .bottomLine{
   text-align: center;
@@ -29,9 +30,19 @@ p{
   padding-bottom: 60px;
   transform: rotateX(-0.17turn);
   padding-right: 35px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   position: relative;
-  top: -10px;
+  top: -15px;
+
+}
+.container {
+  position: relative;
+}
+
+.musicClass {
+  width: 100%;
+  position: absolute;
+
 
 }
 
