@@ -54,11 +54,37 @@ class Table extends React.Component {
                 if (table[j] === "yellow" &&  table[j+1] ===table[j] && table[j+2] === table[j] && table[j+3] === table[j]) {
                     setTimeout(() => {
                         alert("Player yellow won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
                 if (table[j] === "red" &&  table[j+1] ===table[j] && table[j+2] === table[j] && table[j+3] === table[j]) {
                     setTimeout(() => {
                         alert("Player red won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
             }
@@ -76,6 +102,19 @@ class Table extends React.Component {
                     this.state["col" + (i+3)][j] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player yellow won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
                 if (
@@ -85,6 +124,19 @@ class Table extends React.Component {
                     this.state["col" + (i+3)][j] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player red won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
             }
@@ -101,6 +153,19 @@ class Table extends React.Component {
                     this.state["col" + (i+3)][j+3] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player yellow won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
                 if (
@@ -110,6 +175,19 @@ class Table extends React.Component {
                     this.state["col" + (i+3)][j+3] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player red won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
             }
@@ -126,6 +204,19 @@ class Table extends React.Component {
                     this.state["col" + (i-3)][j+3] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player yellow won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
                 if (
@@ -135,6 +226,19 @@ class Table extends React.Component {
                     this.state["col" + (i-3)][j+3] === this.state["col" + i][j]) {
                     setTimeout(() => {
                         alert("Player red won the game");
+                        this.setState(prevState => {
+                            return{
+                                ...prevState,
+                                col1: [0,0,0,0,0,0],
+                                col2: [0,0,0,0,0,0],
+                                col3: [0,0,0,0,0,0],
+                                col4: [0,0,0,0,0,0],
+                                col5: [0,0,0,0,0,0],
+                                col6: [0,0,0,0,0,0],
+                                col7: [0,0,0,0,0,0],
+                                player: true, 
+                            }
+                        })
                     },300);
                 }
             }
