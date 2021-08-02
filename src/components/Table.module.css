@@ -13,10 +13,6 @@
     justify-content: center;
     align-items: center;
 }
-  
-/* .tbody {
-    background-color: blue; 
-} */
 
 .tbody {
     width: 100%;
@@ -26,6 +22,7 @@
     animation: gradient 10s ease infinite;
     font-family: "open sans";
 }
+
 @keyframes gradient 
 {
     0%

@@ -2,8 +2,6 @@ import React from 'react'
 import table from './Table.module.css'
 import Button from './Button';
 
-
-
 class Table extends React.Component {
     constructor() {
         super();
@@ -20,9 +18,6 @@ class Table extends React.Component {
         }
     }
 
-    componentDidMount () {
-    }
-
     componentDidUpdate(){
         this.columnVictoryCondition()
         this.LineVictoryCondition()
@@ -31,7 +26,6 @@ class Table extends React.Component {
     }
 
     onClickColumn = (nbColumn) => {
-        // console.log(`click`)
         for(  let i = 0; i < this.state[nbColumn].length; i++) {
             if(this.state[nbColumn][i] === 0 ) {
                 const colCopy = [...this.state[nbColumn]]
@@ -248,10 +242,7 @@ class Table extends React.Component {
 
 
     render() {
-        // console.log(this.state)
-        
         return (
-            
             <div className={table.divContainer} >
                 <table className={table.table} >
                     <tbody className={table.tbody} >

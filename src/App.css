@@ -7,47 +7,16 @@ p{
   
     background: yellow !important
     /* background: radial-gradient(#fbf93f, #fc4646) */
-  }
+}
+
 .red {
   background: red !important
   /* background: radial-gradient(black, yellow, red, red) */
 }
-/* .mainContent{
-  background-color: teal;
-} */
-.mainTitle {
-  font-size: 2.5rem;
-  text-align: center;
-  text-shadow: rgb(233, 35, 0) 1px 2px 3px;
-  color: white;
-  padding-top: 35px;
-}
-.bottomLine{
-  text-align: center;
-  text-shadow: rgb(122, 240, 44) 1px 2px 3px;
-  font-size: 2rem;
-  color: rgb(235, 180, 180);
-  padding-bottom: 60px;
-  transform: rotateX(-0.17turn);
-  padding-right: 35px;
-  /* margin-bottom: 15px; */
-  position: relative;
-  top: -15px;
 
-}
 .container {
   position: relative;
 }
-
-.musicClass {
-  width: 100%;
-  position: absolute;
-
-
-}
-
-
-
 
 .mainContent span {
   animation: animation 1s ease-in-out infinite alternate;
@@ -55,6 +24,7 @@ p{
   -webkit-animation: animation 1s ease-in-out infinite alternate;
   -o-animation: animation 1s ease-in-out infinite alternate;
 }
+
 h1 {
   background-color: rgba(256,256,256,.03);
   background-image: -webkit-linear-gradient(top, #111, #0c0c0c);
@@ -78,6 +48,25 @@ span {
   vertical-align: middle;
   letter-spacing: .2em;
 }
+
+.bottomLine{
+  text-align: center;
+  text-shadow: rgb(122, 240, 44) 1px 2px 3px;
+  font-size: 2rem;
+  color: rgb(235, 180, 180);
+  padding-bottom: 60px;
+  transform: rotateX(-0.17turn);
+  padding-right: 35px;
+  /* margin-bottom: 15px; */
+  position: relative;
+  top: -15px;
+}
+
+.musicClass {
+  width: 100%;
+  position: absolute;
+}
+
 @keyframes animation
 {
 0% {text-shadow: 0 0 20px #fefcc9,
@@ -148,6 +137,40 @@ span {
   -22px -58px 50px #ec760c,
   0 -82px 80px #cd4606,
   10px -90px 80px  #973716;}
+}
+
+@media (max-width: 800px) {
+  .bottomLine{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottomLine{
+    font-size: 1.4rem;
+    top: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  span{
+    font-size: 4rem;
+  } 
+  .bottomLine{
+    font-size: 1.2rem;
+    top: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  span{
+    font-size: 3rem;
+  } 
+  .bottomLine{
+    font-size: 1rem;
+    top: 10px;
+    padding-right: 15px;
+  }
 }
 
 
