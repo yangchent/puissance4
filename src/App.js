@@ -22,7 +22,7 @@ class App extends React.Component {
                   <span>s</span>
               </h1>
               <Table />
-              <p className="bottomLine">C'est à vous de jouer !!</p>
+              <p className="bottomLine">C'est à vous de jouer !</p>
           </div>
           <AudioPlayer autoPlay src={audio} className='musicClass'/>
       </div>
