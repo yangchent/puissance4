@@ -1,11 +1,10 @@
 import React from 'react'
 import table from './Table.module.css'
 import Button from './Button';
-
+import gameOver from './gameOver';
 class Table extends React.Component {
     constructor() {
         super();
-
         this.state= {
             col1: [0,0,0,0,0,0],
             col2: [0,0,0,0,0,0],
@@ -14,16 +13,18 @@ class Table extends React.Component {
             col5: [0,0,0,0,0,0],
             col6: [0,0,0,0,0,0],
             col7: [0,0,0,0,0,0],
-            player: true,   
+            player: true,
+            clickCounter: 0,   
         }
     }
-
     componentDidUpdate(){
-        this.columnVictoryCondition()
-        this.LineVictoryCondition()
-        this.leftDiagonalVictoryCondition()
-        this.rightDiagonalVictoryCondition()
-    }
+       this.columnVictoryCondition()
+       this.LineVictoryCondition()
+       this.leftDiagonalVictoryCondition()
+       this.rightDiagonalVictoryCondition()
+       this.draw()
+       }
+      
 
     onClickColumn = (nbColumn) => {
         for(  let i = 0; i < this.state[nbColumn].length; i++) {
@@ -33,15 +34,21 @@ class Table extends React.Component {
                 this.setState((prevState) => {
                     return {  
                         ...prevState,
+                        clickCounter : this.state.clickCounter + 1,
                         [nbColumn]: [...colCopy],
                         player: !this.state.player
                     }   
                 })
                 break;
             }
+        }console.log(this.state.clickCounter)
+    }
+    draw = () => {
+        if(this.state.clickCounter === 41 ){
+            return <gameOver />
         }
     }
-    
+
     columnVictoryCondition = () => {
         for ( let i = 1;  i <= 7; i++  ) {
             let table = this.state["col" + i];
@@ -85,8 +92,6 @@ class Table extends React.Component {
             }
         }
    }
-
-
     LineVictoryCondition = () => {
         for ( let i = 1;  i <= 4; i++  ) {
             for ( let j=0; j <= this.state["col" + i].length; j++){
