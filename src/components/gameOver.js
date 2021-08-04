@@ -1,4 +1,6 @@
 import React from 'react';
+
+
 class gameOver extends React.Component {
 
     render() {

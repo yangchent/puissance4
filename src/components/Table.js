@@ -2,6 +2,7 @@ import React from 'react'
 import table from './Table.module.css'
 import Button from './Button';
 import gameOver from './gameOver';
+
 class Table extends React.Component {
     constructor() {
         super();
@@ -43,12 +44,28 @@ class Table extends React.Component {
             }
         }console.log(this.state.clickCounter)
     }
+
     draw = () => {
         if(this.state.clickCounter === 41 ){
-            return <gameOver />
-        }
-    }
-
+            setTimeout(() => {
+                alert("game over! it's a draw");
+                this.setState(prevState => {
+                    return{
+                        ...prevState,
+                        col1: [0,0,0,0,0,0],
+                        col2: [0,0,0,0,0,0],
+                        col3: [0,0,0,0,0,0],
+                        col4: [0,0,0,0,0,0],
+                        col5: [0,0,0,0,0,0],
+                        col6: [0,0,0,0,0,0],
+                        col7: [0,0,0,0,0,0],
+                        player: true, 
+                    }
+                })
+            },200); 
+                 
+            }
+            }   
     columnVictoryCondition = () => {
         for ( let i = 1;  i <= 7; i++  ) {
             let table = this.state["col" + i];
