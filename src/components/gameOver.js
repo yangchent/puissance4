@@ -1,16 +1,16 @@
 import React from 'react';
+import '../App.css';
 
 
-class gameOver extends React.Component {
+class GameOver extends React.Component {
 
     render() {
         return (
-            <div>
-                <p>It's a Draw</p>
-                <h1>Game is Over</h1>
+            <div className="containerGameOver">
+                <h1 className="fontGameOver">It's a Draw! Game Over</h1>
             </div>
         )
     }
 }
 
-export default gameOver;
+export default GameOver;

@@ -13,7 +13,15 @@ p{
   background: red !important
   /* background: radial-gradient(black, yellow, red, red) */
 }
+/* Modification by yangchen GameOver */
+.fontGameOver {
+  color : white;
+}
+.containerGameOver {
+  width: auto;
+  height : 34rem;
 
+}
 .container {
   position: relative;
 }
